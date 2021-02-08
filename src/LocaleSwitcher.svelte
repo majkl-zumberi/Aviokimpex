@@ -11,11 +11,17 @@
 
 <a
   on:click={() => switchLocale("it")}
-  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+  class="z-50 block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
   role="menuitem">Italiano</a
 >
 <a
   on:click={() => switchLocale("en")}
-  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+  class="z-50 block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
   role="menuitem">English</a
 >
+
+<style>
+  a {
+    z-index: 999 !important;
+  }
+</style>
