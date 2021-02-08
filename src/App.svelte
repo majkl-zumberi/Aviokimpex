@@ -13,13 +13,15 @@
   setupI18n({ withLocale: "it" });
 </script>
 
-<Navbar />
-<Router
-  routes={{
-    "/": Home,
-    "/about": About,
-    "/brands": Brands,
-    "/contacts": Contacts,
-  }}
-/>
-<Footer />
+<div class=" overflow-hidden">
+  <Navbar />
+  <Router
+    routes={{
+      "/": Home,
+      "/about": About,
+      "/brands": Brands,
+      "/contacts": Contacts,
+    }}
+  />
+  <Footer />
+</div>
