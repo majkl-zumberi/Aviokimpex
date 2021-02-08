@@ -18,8 +18,10 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "rollup-plugin-scss": "^2.6.1",
     "sirv-cli": "^1.0.0",
     "svelte-i18n": "^3.3.0",
-    "svelte-spa-router": "^3.1.0"
+    "svelte-spa-router": "^3.1.0",
+    "swiper": "^6.4.11"
   }
 }
