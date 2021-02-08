@@ -30,6 +30,7 @@
   }
   function toggleDropDown() {
     dropDownOpen = !dropDownOpen;
+    !menuOpen && dropDownOpen && toggleMenu();
   }
 </script>
 
@@ -134,7 +135,7 @@
                 To: "transform opacity-0 scale-95"
             -->
           <div
-            class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+            class="z-50 origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
             class:opacity-0={!dropDownOpen}
             role="menu"
             aria-orientation="vertical"
