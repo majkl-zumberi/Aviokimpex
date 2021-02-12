@@ -1,0 +1,10 @@
+{
+    "i18n-ally.localesPaths": "public/lang",
+    "conventionalCommits.scopes": [
+        "dependencies",
+        "dotenv",
+        "firebase",
+        "component",
+        "routes"
+    ]
+}
