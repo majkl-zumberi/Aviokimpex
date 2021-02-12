@@ -7,6 +7,7 @@
   import Router from "svelte-spa-router";
   import { FirebaseApp } from "sveltefire";
   import About from "./About.svelte";
+  import ArticlesList from "./ArticlesList.svelte";
   import Brands from "./Brands.svelte";
   import Contacts from "./Contacts.svelte";
   import Footer from "./Footer.svelte";
@@ -38,6 +39,7 @@
         "/about": About,
         "/brands": Brands,
         "/contacts": Contacts,
+        "/articles/category/:id_category": ArticlesList,
       }}
     />
   </FirebaseApp>
