@@ -1,6 +1,6 @@
 <script>
   import { _ } from "svelte-i18n";
-  import FooterLink from "./FooterLink.svelte;";
+  import FooterLink from "./FooterLink.svelte";
 
   let routes = [
     {
