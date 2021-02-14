@@ -39,7 +39,7 @@
         "/about": About,
         "/brands": Brands,
         "/contacts": Contacts,
-        "/articles/category/:id_category": ArticlesList,
+        "/articles/category/:id_category/:id_parent_category?": ArticlesList,
       }}
     />
   </FirebaseApp>
