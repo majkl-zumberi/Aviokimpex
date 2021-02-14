@@ -19,7 +19,7 @@
         <a
           class="text-sm text-gray-700 uppercase font-bold leading-5 mx-4 md:my-0"
           use:link
-          href="/articles/category/{category.id}?subcategory=false"
+          href="/articles/category/nosubcategory/{category.id}?subcategory=false"
           >{category.nome}</a
         >
         <div class="dropdown-content">
@@ -33,7 +33,7 @@
             {#each subcategories as subcategory}
               <a
                 use:link
-                href="/articles/category/{subcategory.id}?subcategory=true"
+                href="/articles/category/{subcategory.id}/{category.id}?subcategory=true"
                 >{subcategory.nome}</a
               >
             {/each}
