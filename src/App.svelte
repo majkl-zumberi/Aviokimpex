@@ -12,6 +12,7 @@
   import Contacts from "./Contacts.svelte";
   import Footer from "./Footer.svelte";
   import Home from "./Home.svelte";
+  import InfoBanner from "./InfoBanner.svelte";
   import Navbar from "./Navbar.svelte";
   import { setupI18n } from "./services/i18n";
 
@@ -32,6 +33,7 @@
 
 <div class=" overflow-hidden">
   <Navbar />
+  <InfoBanner />
   <FirebaseApp {firebase}>
     <Router
       routes={{
