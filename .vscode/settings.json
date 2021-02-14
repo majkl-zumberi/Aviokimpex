@@ -5,6 +5,7 @@
         "dotenv",
         "firebase",
         "component",
-        "routes"
+        "routes",
+        "assets"
     ]
 }
