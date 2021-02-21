@@ -81,9 +81,6 @@
 </footer>
 
 <style>
-  span {
-    font-family: "Alex Brush", cursive;
-  }
   footer {
     background-color: #dbe0e4 !important;
   }
