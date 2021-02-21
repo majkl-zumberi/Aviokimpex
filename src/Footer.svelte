@@ -75,7 +75,7 @@
       </div>
     </div>
     <div class="text-center">
-     <br><br><p class="mb-2 text-gray-800">© 2021 | Kimpex di Pietro Marinoni</p>
+      <p class="mb-2 text-gray-800">© 2021 | Kimpex di Pietro Marinoni</p>
     </div>
   </div>
 </footer>
