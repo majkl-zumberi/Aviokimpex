@@ -57,7 +57,7 @@
           class="module mid w-full bg-center"
         >
           <h2 class="bg-gradient-to-r from-green-500 to-blue-500  ">
-            Avionkimpex
+            Aviokimpex
           </h2>
         </div>
       </SwiperSlide>
