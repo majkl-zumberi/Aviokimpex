@@ -3,3 +3,4 @@
 
 .DS_Store
 .env
+/cloud_functions_firebase/
