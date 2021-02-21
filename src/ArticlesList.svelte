@@ -17,7 +17,7 @@
 
   $: {
     filterByArticleName = getParameterByName("articleName");
-    subcategory = getParameterByName("subcategory");
+    subcategory = JSON.parse(getParameterByName("subcategory"));
   }
 </script>
 
