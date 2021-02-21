@@ -2,7 +2,6 @@
   import { location, push } from "svelte-spa-router";
 
   let searchArticle = "";
-  let disabledBtnState = "disabled:opacity-50";
   $: alreadyInArticles = $location.includes("/articles");
   function redirect() {
     /**
@@ -19,11 +18,13 @@
         push(
           `/articles/category/nosubcategory/nocategory?articleName=${searchArticle}`
         );
+        searchArticle = "";
       }, 0);
     } else {
       push(
         `/articles/category/nosubcategory/nocategory?articleName=${searchArticle}`
       );
+      searchArticle = "";
     }
   }
 </script>
