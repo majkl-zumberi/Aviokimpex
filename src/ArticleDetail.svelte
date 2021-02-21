@@ -9,7 +9,7 @@
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
-      <div class="p-4 lg:w-1/3">
+      <div class="p-4 lg:w-1/3 sm:w-full">
         <div
           class="h-full  bg-opacity-75 px-8      pb-24 rounded-lg overflow-hidden text-center relative"
         >
@@ -31,7 +31,7 @@
         <div slot="fallback" />
       </Doc>
 
-      <div class="p-4 lg:w-1/3">
+      <div class="p-4 lg:w-1/3 sm:w-full">
         <div
           class=" bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0"
         >

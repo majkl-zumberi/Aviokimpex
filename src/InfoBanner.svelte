@@ -5,7 +5,7 @@
       src="/images/AvioKimpexsrl.png"
       alt="kimpex logo"
     />
-    <div class="md:w-2/5 md:pl-6">
+    <div class="lg:w-2/5 lg:pl-6 w-full">
       <p class="leading-relaxed text-base">
         Inserisci il <span class="font-medium">codice</span> o
         <span class="font-medium">il nome</span> del prodotto che desideri ricercare
@@ -22,7 +22,7 @@
         >
       </div>
     </div>
-    <div class="flex  flex-col md:w-1/3 text-center">
+    <div class="flex  flex-col lg:w-1/3 text-center justify-center w-full">
       <p class="leading-relaxed text-base text-2xl ">bisogno di assistenza?</p>
       <p class="leading-relaxed text-base ">
         non hai trovato il prodotto che cercavi? Chiamaci!

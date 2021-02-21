@@ -7,7 +7,7 @@
     viewLink = true;
 </script>
 
-<div class="p-4 lg:w-1/3">
+<div class="p-4 lg:w-1/3 sm:w-full">
   <div
     class:h-full={isInList}
     class="bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
