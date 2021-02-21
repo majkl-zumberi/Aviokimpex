@@ -1,15 +1,21 @@
 <script>
-  export let categoryName, article;
+  import { link } from "svelte-spa-router";
+
+  export let categoryName,
+    article,
+    isInList = true,
+    viewLink = true;
 </script>
 
 <div class="p-4 lg:w-1/3">
   <div
-    class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
+    class:h-full={isInList}
+    class="bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative"
   >
     <h2
       class="tracking-widest text-xs title-font font-medium text-gray-400 mb-3"
     >
-      {categoryName} |
+      {categoryName && categoryName != undefined ? `${categoryName} |` : ""}
       <span
         class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest"
         >{article.marca}</span
@@ -32,23 +38,31 @@
           >cod. {article.alternatoPN}-{article.partNumber}</span
         >
       </span>
-      <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-        <a class="text-indigo-500 inline-flex items-center"
-          >Richiedi quotazione
-          <svg
-            class="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M5 12h14" />
-            <path d="M12 5l7 7-7 7" />
-          </svg>
-        </a>
-      </span>
+
+      {#if viewLink}
+        <span
+          class="text-gray-400 inline-flex items-center leading-none text-sm"
+        >
+          <a
+            use:link
+            href="/article/{article.id}"
+            class="text-indigo-500 inline-flex items-center py-1 px-2 hover:bg-indigo-50"
+            >Richiedi quotazione
+            <svg
+              class="w-4 h-4 ml-2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </span>
+      {/if}
     </div>
   </div>
 </div>
