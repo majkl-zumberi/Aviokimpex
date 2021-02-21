@@ -30,7 +30,6 @@
   };
 
   firebase.initializeApp(firebaseConfig);
-  console.log(_vars);
 </script>
 
 <div class=" overflow-hidden">
