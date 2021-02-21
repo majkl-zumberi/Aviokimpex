@@ -28,7 +28,7 @@
       <section class="w-full sm:w-4/12 mb-8 sm:mb-0">
         <img
           class="hidden lg:block h-14 w-auto"
-          src="http://www.aviokimpex.com/wp-content/uploads/2015/06/Logo-Kimpex.png"
+          src="/images/Logo-Kimpex.png"
           alt="kimpex logo"
         />
         <p class="text-gray-800">

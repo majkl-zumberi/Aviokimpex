@@ -95,7 +95,7 @@
         <div class="flex-shrink-0 flex items-center">
           <img
             class="hidden lg:block h-11 w-auto"
-            src="http://www.aviokimpex.com/wp-content/uploads/2015/06/Logo-Kimpex.png"
+            src="/images/Logo-Kimpex.png"
             alt="Workflow"
           />
         </div>
