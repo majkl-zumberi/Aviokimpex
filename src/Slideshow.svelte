@@ -8,6 +8,7 @@
     Scrollbar,
   } from "swiper";
   import { Swiper, SwiperSlide } from "swiper/svelte";
+  import NavCategories from "./NavCategories.svelte";
 
   // install Swiper modules
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
@@ -36,31 +37,34 @@
   ];
 </script>
 
-<Swiper
-  spaceBetween={5}
-  slidesPerView={1}
-  navigation
-  pagination
-  loop
-  autoplay={{ delay: 2500, disableOnInteraction: false }}
-  watchSlidesVisibility
-  watchSlidesProgress
-  on:slideChange={() => console.log("slide change")}
->
-  {#each imagePaths as image}
-    <SwiperSlide>
-      <div
-        style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url({image.path}); background-position: {image.position}"
-        class="module mid w-full bg-center"
-      >
-        <h2 class="bg-gradient-to-r from-green-500 to-blue-500  ">
-          Avionkimpex
-        </h2>
-      </div>
-    </SwiperSlide>
-  {/each}
-</Swiper>
+<div class="relative">
+  <Swiper
+    spaceBetween={5}
+    slidesPerView={1}
+    navigation
+    pagination
+    loop
+    autoplay={{ delay: 2500, disableOnInteraction: false }}
+    watchSlidesVisibility
+    watchSlidesProgress
+    on:slideChange={() => console.log("slide change")}
+  >
+    {#each imagePaths as image}
+      <SwiperSlide>
+        <div
+          style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url({image.path}); background-position: {image.position}"
+          class="module mid w-full bg-center"
+        >
+          <h2 class="bg-gradient-to-r from-green-500 to-blue-500  ">
+            Avionkimpex
+          </h2>
+        </div>
+      </SwiperSlide>
+    {/each}
+  </Swiper>
+  <NavCategories />
+</div>
 
 <style>
   .mid h2 {

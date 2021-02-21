@@ -10,6 +10,8 @@
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-replace": "^2.3.4",
+    "dotenv": "^8.2.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
@@ -18,10 +20,12 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "firebase": "^8.2.6",
     "rollup-plugin-scss": "^2.6.1",
     "sirv-cli": "^1.0.0",
     "svelte-i18n": "^3.3.0",
     "svelte-spa-router": "^3.1.0",
+    "sveltefire": "^0.1.5",
     "swiper": "^6.4.11"
   }
 }
