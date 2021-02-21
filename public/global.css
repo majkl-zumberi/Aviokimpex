@@ -39,7 +39,7 @@ button {
 }
 
 button:disabled {
-	color: #999;
+opacity: 50%;
 }
 
 button:not(:disabled):active {
