@@ -116,7 +116,7 @@
           <div>
             <button
               on:click={toggleDropDown}
-              class="flex bg-white"
+              class="flex"
               id="user-menu"
               aria-haspopup="true"
             >
