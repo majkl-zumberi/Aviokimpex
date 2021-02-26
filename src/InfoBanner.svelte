@@ -59,11 +59,11 @@
       </div>
     </div>
     <div class="flex  flex-col lg:w-1/3 text-center justify-center w-full">
-      <p class="leading-relaxed text-base text-2xl ">bisogno di assistenza?</p>
+      <p class="leading-relaxed text-base text-2xl font-bold">bisogno di assistenza?</p>
       <p class="leading-relaxed text-base ">
         non hai trovato il prodotto che cercavi? Chiamaci!
       </p>
-      <p class="leading-relaxed text-base text-2xl">+39 030 2421830</p>
+      <p class="leading-relaxed text-base text-2xl font-bold">+39 030 2421830</p>
     </div>
   </div>
 </section>
