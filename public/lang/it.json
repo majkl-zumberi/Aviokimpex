@@ -4,5 +4,40 @@
             "headQuarter":"Kimpex di Pietro Marinoni - Sede Operativa: via Raffaele Da Brescia 25 - 25124 Brescia",
             "keepInTouch":"Contattaci!"
         }
+    },
+    "infoBanner":{
+        "search":{
+            "insert":"inserisci",
+            "name":"il nome",
+            "product":"del prodotto che desideri ricercare"
+        },
+        "button":{
+            "search":"Cerca"
+        },
+        "assistance":{
+            "need":"bisogno di assistenza?",
+            "callus":"non hai trovato il prodotto che cercavi? Chiamaci!"
+        }
+    },
+    "about":{
+        "who":"Chi siamo?",
+        "marinoni":"Pietro Marinoni professionista da quasi quarantanni nel settore aeronautico, civile e militare per la commercializzazione parti di ricambio, nel 2000 fonda la Kimpex, un’azienda in grado di servire a 360° ricambistica e assistenza minuteria, attrezzature,prodotti chimici e lubrificanti."
+    },
+    "order":{
+        "request":"Richiedi quotazione",
+        "info":"Vuoi ricevere maggiori informazioni o una quotazione personalizzata su questo articolo? Chiamaci al numero",
+        "fillForm":"oppure compila il form",
+        "fullName":"Nome e cognome",
+        "phone":"Telefono",
+        "submit":"Invia"
+    },
+    "ListCategories":{
+        "allCategories":"Tutte le categorie"
+    },
+    "links":{
+        "home":"home",
+        "aboutUs":"chi siamo",
+        "brands":"le nostre marche",
+        "contactUs":"contattaci"
     }
 } 

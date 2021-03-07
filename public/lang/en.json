@@ -1,8 +1,43 @@
 {
-    "footer":{
-        "contacts":{
-            "headQuarter":"Kimpex di Pietro Marinoni - Headquarters: Street Raffaele Da Brescia 25 - 25124 Brescia",
-            "keepInTouch":"Let's keep in touch!"
-        }
+  "footer": {
+    "contacts": {
+      "headQuarter": "Kimpex di Pietro Marinoni - Operational Headquarters: via Raffaele Da Brescia 25 - 25124 Brescia",
+      "keepInTouch": "Contact us!"
     }
+  },
+  "infoBanner": {
+    "search": {
+      "insert": "insert",
+      "name": "the name",
+      "product": "of the product you wish to search for"
+    },
+    "button": {
+      "search": "Search"
+    },
+    "assistance": {
+      "need": "need assistance?",
+      "callus": "Haven't found the product you were looking for? Call us!"
+    }
+  },
+  "about": {
+    "who": "Who we are?",
+    "marinoni": "Pietro Marinoni, a professional for almost forty years in the aeronautical, civil and military sectors for the marketing of spare parts, in 2000 he founded Kimpex, a company capable of providing 360 ° spare parts and assistance for small parts, equipment, chemicals and lubricants."
+  },
+  "order": {
+    "request": "Request a quote",
+    "info": "Do you want to receive more information or a personalized quotation on this article? Call us at the number",
+    "fillForm": "or fill out the form",
+    "fullName": "Name and surname",
+    "phone": "Phone",
+    "submit": "Send"
+  },
+  "ListCategories": {
+    "allCategories": "All the categories"
+  },
+  "links": {
+    "home": "home",
+    "aboutUs": "about us",
+    "brands": "our brands",
+    "contactUs": "contact us"
+  }
 }
