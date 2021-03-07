@@ -5,19 +5,19 @@
   let routes = [
     {
       path: "/",
-      label: "Home",
+      label: "home",
     },
     {
       path: "/about",
-      label: "Chi siamo",
+      label: "aboutUs",
     },
     {
       path: "/brands",
-      label: "Le nostre marche",
+      label: "brands",
     },
     {
       path: "/contacts",
-      label: "Contattaci",
+      label: "contactUs",
     },
   ];
 </script>
@@ -75,7 +75,8 @@
       </div>
     </div>
     <div class="text-center">
-    <br><br>  <p class="mb-2 text-gray-800">© 2021 | Kimpex di Pietro Marinoni</p>
+      <br /><br />
+      <p class="mb-2 text-gray-800">© 2021 | Kimpex di Pietro Marinoni</p>
     </div>
   </div>
 </footer>

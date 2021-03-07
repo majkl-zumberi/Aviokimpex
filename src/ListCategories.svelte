@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "svelte-i18n";
   import { link } from "svelte-spa-router";
   import { Collection } from "sveltefire";
 </script>
@@ -7,7 +8,9 @@
   class="wrapper bg-gray-100 border-b-2 -mt-8 bg-white overflow-hidden mx-auto max-w-md rounded shadow-lg"
 >
   <h3 class="bg-grey-lightest px-8 mt-10 py-6 font-semibold">
-    Tutte le categorie
+    {$_("ListCategories.allCategories", {
+      default: "Tutte le categorie",
+    })}
   </h3>
 
   <div class="question-wrap mx-8 mt-2">

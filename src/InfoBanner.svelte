@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "svelte-i18n";
   import { location, push } from "svelte-spa-router";
 
   let searchArticle = "";
@@ -38,8 +39,17 @@
     />
     <div class="lg:w-2/5 lg:pl-6 w-full">
       <p class="leading-relaxed text-base">
-        Inserisci
-        <span class="font-medium">il nome</span> del prodotto che desideri ricercare
+        {$_("infoBanner.search.insert", {
+          default: "inserisci",
+        })}
+        <span class="font-medium"
+          >{$_("infoBanner.search.name", {
+            default: "il nome",
+          })}</span
+        >
+        {$_("infoBanner.search.product", {
+          default: "del prodotto che desideri ricercare",
+        })}
       </p>
       <div class="flex md:mt-4 mt-6">
         <input
@@ -54,16 +64,26 @@
           class="{searchArticle == ''
             ? 'disabled:opacity-50 disabled:text-black'
             : ''} inline-flex text-white bg-green-400 border-0 py-2 px-4 focus:outline-none hover:bg-green-600 "
-          >Cerca</button
+          >{$_("infoBanner.button.search", {
+            default: "Cerca",
+          })}</button
         >
       </div>
     </div>
     <div class="flex  flex-col lg:w-1/3 text-center justify-center w-full">
-      <p class="leading-relaxed text-base text-2xl font-bold">bisogno di assistenza?</p>
-      <p class="leading-relaxed text-base ">
-        non hai trovato il prodotto che cercavi? Chiamaci!
+      <p class="leading-relaxed text-base text-2xl font-bold">
+        {$_("infoBanner.assistance.need", {
+          default: "bisogno di assistenza?",
+        })}
       </p>
-      <p class="leading-relaxed text-base text-2xl font-bold">+39 030 2421830</p>
+      <p class="leading-relaxed text-base ">
+        {$_("infoBanner.assistance.callus", {
+          default: "non hai trovato il prodotto che cercavi? Chiamaci!",
+        })}
+      </p>
+      <p class="leading-relaxed text-base text-2xl font-bold">
+        +39 030 2421830
+      </p>
     </div>
   </div>
 </section>

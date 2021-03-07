@@ -10,19 +10,19 @@
   let routes = [
     {
       path: "/",
-      label: "Home",
+      label: "home",
     },
     {
       path: "/about",
-      label: "Chi siamo",
+      label: "aboutUs",
     },
     {
       path: "/brands",
-      label: "Le nostre marche",
+      label: "brands",
     },
     {
       path: "/contacts",
-      label: "Contattaci",
+      label: "contactUs",
     },
   ];
   function toggleMenu() {

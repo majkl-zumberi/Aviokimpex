@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "svelte-i18n";
   import { link } from "svelte-spa-router";
 
   export let categoryName,
@@ -47,7 +48,9 @@
             use:link
             href="/article/{article.id}"
             class="text-indigo-500 inline-flex items-center py-1 px-2 hover:bg-indigo-50"
-            >Richiedi quotazione
+            >{$_("order.request", {
+              default: "Richiedi quotazione",
+            })}
             <svg
               class="w-4 h-4 ml-2"
               viewBox="0 0 24 24"

@@ -1,4 +1,5 @@
 <script>
+  import { _ } from "svelte-i18n";
   import { Doc } from "sveltefire";
   import ArticleListContainer from "./ArticleListContainer.svelte";
   import ListCategories from "./ListCategories.svelte";
@@ -9,7 +10,7 @@
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
-      <div class="p-4 lg:w-1/3 sm:w-full">
+      <div class="p-4 lg:w-1/3 w-full">
         <div
           class="h-full  bg-opacity-75 px-8      pb-24 rounded-lg overflow-hidden text-center relative"
         >
@@ -36,18 +37,25 @@
           class=" bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0"
         >
           <h2 class="text-gray-900 text-lg font-medium title-font mb-5">
-            Richiedi quotazione
+            {$_("order.request", {
+              default: "Richiedi quotazione",
+            })}
           </h2>
           <h3 class="text-gray-500 text-base  title-font mb-5">
-            Vuoi ricevere maggiori informazioni o una quotazione personalizzata
-            su questo articolo? Chiamaci al numero <span class="font-medium"
-              >+390302421830</span
-            > oppure compila il form
+            {$_("order.info", {
+              default:
+                "Vuoi ricevere maggiori informazioni o una quotazione personalizzata su questo articolo? Chiamaci al numero",
+            })} <span class="font-medium">+390302421830</span>
+            {$_("order.fillForm", {
+              default: "oppure compila il form",
+            })}
           </h3>
           <div class="relative mb-4">
-            <label for="full-name" class="leading-7 text-sm text-gray-600"
-              >Full Name</label
-            >
+            <label for="full-name" class="leading-7 text-sm text-gray-600">
+              {$_("order.fullName", {
+                default: "Nome e cognome",
+              })}
+            </label>
             <input
               type="text"
               id="full-name"
@@ -67,9 +75,11 @@
             />
           </div>
           <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-600"
-              >Telefono</label
-            >
+            <label for="email" class="leading-7 text-sm text-gray-600">
+              {$_("order.phone", {
+                default: "Telefono",
+              })}
+            </label>
             <input
               type="email"
               id="email"
@@ -79,8 +89,11 @@
           </div>
           <button
             class="text-white uppercase bg-green-400 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-            >Invia</button
           >
+            {$_("order.submit", {
+              default: "Invia",
+            })}
+          </button>
         </div>
       </div>
     </div>
