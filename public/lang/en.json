@@ -39,5 +39,13 @@
     "aboutUs": "about us",
     "brands": "our brands",
     "contactUs": "contact us"
-  }
+  },
+  "contacts":{
+    "thanks": "Thanks for contacting us",
+    "name": "Name",
+    "email":"Mail",
+    "message":"Message",
+    "send":"Send",
+    "soon":"We'll contact you as soon as possible."
+}
 }
