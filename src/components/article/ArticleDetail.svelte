@@ -2,7 +2,7 @@
   import { _ } from "svelte-i18n";
   import { Doc } from "sveltefire";
   import ArticleListContainer from "./ArticleListContainer.svelte";
-  import ListCategories from "./ListCategories.svelte";
+  import ListCategories from "../../ListCategories.svelte";
 
   export let params = {};
 </script>

@@ -1,9 +1,9 @@
 <script>
   import { locale } from "svelte-i18n";
-  import LangIcon from "./LangIcon.svelte";
-  import LocaleSwitcher from "./LocaleSwitcher.svelte";
+  import LangIcon from "../../LangIcon.svelte";
+  import LocaleSwitcher from "../../LocaleSwitcher.svelte";
   import NavbarLink from "./NavbarLink.svelte";
-  import { setupI18n } from "./services/i18n";
+  import { setupI18n } from "../../services/i18n/i18n";
 
   let menuOpen = false;
   let dropDownOpen = false;

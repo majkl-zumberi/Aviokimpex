@@ -8,7 +8,7 @@
     Scrollbar,
   } from "swiper";
   import { Swiper, SwiperSlide } from "swiper/svelte";
-  import NavCategories from "./NavCategories.svelte";
+  import NavCategories from "./components/navbar/NavCategories.svelte";
 
   // install Swiper modules
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);

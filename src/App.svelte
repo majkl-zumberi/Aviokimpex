@@ -7,15 +7,15 @@
   import Router from "svelte-spa-router";
   import { FirebaseApp } from "sveltefire";
   import About from "./About.svelte";
-  import ArticleDetail from "./ArticleDetail.svelte";
-  import ArticlesList from "./ArticlesList.svelte";
+  import ArticleDetail from "./components/article/ArticleDetail.svelte";
+  import ArticlesList from "./components/article/ArticlesList.svelte";
   import Brands from "./Brands.svelte";
   import Contacts from "./Contacts.svelte";
-  import Footer from "./Footer.svelte";
+  import Footer from "./components/footer/Footer.svelte";
   import Home from "./Home.svelte";
   import InfoBanner from "./InfoBanner.svelte";
-  import Navbar from "./Navbar.svelte";
-  import { setupI18n } from "./services/i18n";
+  import Navbar from "./components/navbar/Navbar.svelte";
+  import { setupI18n } from "./services/i18n/i18n";
 
   locale.set("it");
   setupI18n({ withLocale: "it" });
