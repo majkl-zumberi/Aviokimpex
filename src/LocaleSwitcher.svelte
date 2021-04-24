@@ -9,19 +9,17 @@
   }
 </script>
 
-<a
+<button
   on:click={() => switchLocale("it")}
-  class="z-50 block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-  role="menuitem">Italiano</a
->
-<a
+  class="z-50 block bg-gray-100 px-4 py-2 text-sm text-gray-700 hover:bg-gray-300"
+  role="menuitem">Italiano</button>
+<button
   on:click={() => switchLocale("en")}
-  class="z-50 block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-  role="menuitem">English</a
->
+  class="z-50 block bg-gray-100 px-4 py-2 text-sm text-gray-700 hover:bg-gray-300"
+  role="menuitem">English</button>
 
 <style>
-  a {
+  button {
     z-index: 999 !important;
   }
 </style>
