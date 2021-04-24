@@ -32,11 +32,18 @@
 
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-16 mx-auto flex items-center flex-wrap">
-    <img
+    <div class="flex flex-col items-center w-full sm:w-full md:w-full lg:w-auto">
+      <img
+        class=" h-14 w-14"
+        src="/images/Logo-Kimpex.png"
+        alt="Workflow"
+      />
+      <img
       class="block h-14 w-auto"
       src="/images/AvioKimpexsrl.png"
       alt="kimpex logo"
     />
+    </div>
     <div class="lg:w-2/5 lg:pl-6 w-full">
       <p class="leading-relaxed text-base">
         {$_("infoBanner.search.insert", {
@@ -81,9 +88,15 @@
           default: "non hai trovato il prodotto che cercavi? Chiamaci!",
         })}
       </p>
+      <div class="flex flex-col items-center ">
       <p class="leading-relaxed text-base text-2xl font-bold">
         +39 030 2421830
       </p>
+      <p class="leading-relaxed text-xs font-normal">o</p>  
+      <p class="leading-relaxed text-base text-2xl font-bold">
+        +39 391 7470911
+     </p>
+      </div>
     </div>
   </div>
 </section>
