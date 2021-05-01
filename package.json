@@ -20,6 +20,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@zerodevx/svelte-toast": "^0.2.2",
+    "emailjs-com": "^2.6.4",
     "firebase": "^8.2.6",
     "rollup-plugin-scss": "^2.6.1",
     "sirv-cli": "^1.0.0",
