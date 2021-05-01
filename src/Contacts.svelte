@@ -1,5 +1,31 @@
 <script>
   import { _ } from "svelte-i18n";
+  import * as emailjs from 'emailjs-com';
+  import { toast } from '@zerodevx/svelte-toast'
+  function sendForm(event){
+    console.log({event})
+    const loadingToast=toast.push('Invio in corso...')
+    emailjs.sendForm(_vars.env.emailjsServiceId, _vars.env.emailjsTemplateId, event.target, _vars.env.emailjsUserId)
+      .then((result) => {
+        toast.pop(loadingToast);
+        toast.push('Email inviata con successo!', {
+          theme: {
+            '--toastBackground': '#48BB78',
+            '--toastColor': '#FFFFFF',
+            '--toastProgressBackground': '#2F855A'
+          }
+        });
+        event.target.reset();
+      }, (error) => {
+        toast.push('Ops.. si è verificato un errore!', {
+                theme: {
+          '--toastBackground': '#F56565',
+          '--toastColor': '#FFFFFF',
+          '--toastProgressBackground': '#C53030'
+        }
+        })
+      });
+  }
 </script>
 
 
@@ -17,35 +43,44 @@
           default:
             "Grazie per averci contattato",
         })}</p>
-        <div class="relative mb-4">
-          <label for="name" class="leading-7 text-sm text-gray-600">{$_("contacts.name", {
+        <form on:submit|preventDefault={sendForm}>
+          <div class="relative mb-4">
+            <label for="from_name" class="leading-7 text-sm text-gray-600">{$_("contacts.name", {
+              default:
+                "Nome",
+              })}</label>
+            <input type="text" id="from_name" name="from_name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="from_email" class="leading-7 text-sm text-gray-600">{$_("contacts.email", {
+              default:
+                "Email",
+              })}</label>
+            <input type="email" id="from_email" name="from_email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-600">{$_("contacts.message", {
+              default:
+                "Messaggio",
+              })}</label>
+            <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+          <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{$_("contacts.send", {
             default:
-              "Nome",
-            })}</label>
-          <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-        </div>
-        <div class="relative mb-4">
-          <label for="name" class="leading-7 text-sm text-gray-600">{$_("contacts.email", {
+              "Invia",
+            })}</button>
+          </form>
+          <p class="text-xs text-gray-500 mt-3">{$_("contacts.soon", {
             default:
-              "Email",
-            })}</label>
-          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-        </div>
-        <div class="relative mb-4">
-          <label for="name" class="leading-7 text-sm text-gray-600">{$_("contacts.message", {
-            default:
-              "Messaggio",
-            })}</label>
-          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-        </div>
-        <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">{$_("contacts.send", {
-          default:
-            "Invia",
-          })}</button>
-        <p class="text-xs text-gray-500 mt-3">{$_("contacts.soon", {
-          default:
-            "Ti contatteremo nel minor tempo possibile.",
-          })}</p>
+              "Ti contatteremo nel minor tempo possibile.",
+            })}</p>
       </div>
     </div>
   </section>
+  <style>
+    :root {
+    --toastBackground: rgba(255,255,255,0.95);
+    --toastColor: #424242;
+    --toastProgressBackground: aquamarine;
+  }
+  </style>
