@@ -1,7 +1,7 @@
-<div class="flex flex-wrap -mx-2 p-10">
-    <div class="px-2 w-1/2">
+<div class="flex flex-wrap space-y-4 md:space-y-0 flex-col md:flex-row items-center -mx-2 p-10">
+    <div class="px-2 md:w-1/2 w-full">
     <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-        <img alt="gallery" class="w-full object-cover h-full object-center block opacity-40c absolute inset-0 filter blur-sm" src="images/engine-part.jpg">
+        <img alt="gallery" class="w-full object-cover h-full object-center block opacity-40c absolute inset-0 filter md:blur-sm" src="images/engine-part.jpg">
         <div class="text-center relative z-10 w-full">
         <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
             <span class="bg-gradient-to-r from-green-500 to-blue-500 card-title text-base md:text-xl lg:text-3xl">vasto assortimento</span>
@@ -14,9 +14,9 @@
         </div>
     </div>
     </div>
-    <div class="px-2 w-1/2">
+    <div class="px-2 md:w-1/2 w-full">
     <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-        <img alt="gallery" class="w-full object-cover h-full object-center block opacity-40 absolute inset-0 filter blur-sm" src="images/front-view-plane.jpg">
+        <img alt="gallery" class="w-full object-cover h-full object-center block opacity-40 absolute inset-0 filter md:blur-sm" src="images/front-view-plane.jpg">
         <div class="text-center relative z-10 w-full">
         <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
             <span class="bg-gradient-to-r from-green-500 to-blue-500 card-title text-base md:text-xl lg:text-3xl">prezzi convenienti</span>
