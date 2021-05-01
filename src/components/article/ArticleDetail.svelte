@@ -3,8 +3,39 @@
   import { Doc } from "sveltefire";
   import ArticleListContainer from "./ArticleListContainer.svelte";
   import ListCategories from "../../ListCategories.svelte";
+  import * as emailjs from 'emailjs-com';
+  import { toast } from '@zerodevx/svelte-toast'
 
+  let articleMessage='';
   export let params = {};
+  function mapArticleToMessageEmail(article){
+    articleMessage=Object.keys(article)
+    .map(articleDetail=>`${articleDetail}: ${article[articleDetail]}`)
+    .join(", ");
+  }
+  function sendForm(event){
+    const loadingToast=toast.push('Invio in corso...')
+    emailjs.sendForm(_vars.env.emailjsServiceId, _vars.env.emailjsTemplateArticleId, event.target, _vars.env.emailjsUserId)
+      .then((result) => {
+        toast.pop(loadingToast);
+        toast.push('Richiesta quotazione inviata con successo!', {
+          theme: {
+            '--toastBackground': '#48BB78',
+            '--toastColor': '#FFFFFF',
+            '--toastProgressBackground': '#2F855A'
+          }
+        });
+        event.target.reset();
+      }, (error) => {
+        toast.push('Ops.. si è verificato un errore!', {
+                theme: {
+          '--toastBackground': '#F56565',
+          '--toastColor': '#FFFFFF',
+          '--toastProgressBackground': '#C53030'
+        }
+        })
+      });
+  }
 </script>
 
 <section class="text-gray-600 body-font">
@@ -23,6 +54,7 @@
           article={articleItem}
           isInList={false}
           viewLink={false}
+          on:articleDetail={(article)=>mapArticleToMessageEmail(article.detail.article)}
         />
 
         <!-- Only shown when loading -->
@@ -50,50 +82,54 @@
               default: "oppure compila il form",
             })}
           </h3>
-          <div class="relative mb-4">
-            <label for="full-name" class="leading-7 text-sm text-gray-600">
-              {$_("order.fullName", {
-                default: "Nome e cognome",
-              })}
-            </label>
-            <input
-              type="text"
-              id="full-name"
-              name="full-name"
-              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-600"
-              >Email</label
+          <form on:submit|preventDefault={sendForm}>
+            <div class="relative mb-4">
+              <label for="from_name" class="leading-7 text-sm text-gray-600">
+                {$_("order.fullName", {
+                  default: "Nome e cognome",
+                })}
+              </label>
+              <input
+                type="text"
+                id="from_name"
+                name="from_name"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="from_email" class="leading-7 text-sm text-gray-600"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="from_email"
+                name="from_email"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="phone_number" class="leading-7 text-sm text-gray-600">
+                {$_("order.phone", {
+                  default: "Telefono",
+                })}
+              </label>
+              <input
+                type="text"
+                id="phone_number"
+                name="phone_number"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+              <input type="hidden" name="message" bind:value={articleMessage}>
+            </div>
+            <button
+              type="submit"
+              class="text-white uppercase bg-green-400 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg"
             >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-600">
-              {$_("order.phone", {
-                default: "Telefono",
+              {$_("order.submit", {
+                default: "Invia",
               })}
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <button
-            class="text-white uppercase bg-green-400 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-          >
-            {$_("order.submit", {
-              default: "Invia",
-            })}
-          </button>
+            </button>
+        </form>
         </div>
       </div>
     </div>

@@ -1,7 +1,14 @@
 <script>
   import { _ } from "svelte-i18n";
   import { link } from "svelte-spa-router";
-
+  import { createEventDispatcher } from 'svelte';
+  import { onMount } from 'svelte';
+  const dispatch = createEventDispatcher();
+  onMount(()=>{
+    dispatch('articleDetail', {
+			article
+		});
+  })
   export let categoryName,
     article,
     isInList = true,
