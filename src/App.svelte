@@ -16,6 +16,7 @@
   import InfoBanner from "./InfoBanner.svelte";
   import Navbar from "./components/navbar/Navbar.svelte";
   import { setupI18n } from "./services/i18n/i18n";
+  import { SvelteToast } from '@zerodevx/svelte-toast'
 
   locale.set("it");
   setupI18n({ withLocale: "it" });
@@ -33,6 +34,7 @@
 </script>
 
 <div class=" overflow-hidden">
+  <SvelteToast />
   <Navbar />
   <InfoBanner />
   <FirebaseApp {firebase}>
