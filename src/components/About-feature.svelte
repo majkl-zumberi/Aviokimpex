@@ -91,8 +91,3 @@
       </div>
     </div>
 </section>
-<style>
-    section {
-        background-color: darkseagreen;
-    }
-</style>
