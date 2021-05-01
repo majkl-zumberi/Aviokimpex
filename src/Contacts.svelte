@@ -33,8 +33,8 @@
 
   <section class="text-gray-600 body-font relative">
 
-    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-      <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+    <div class="container px-5 py-24 mx-auto flex flex-col md:flex-nowrap md:flex-row flex-wrap">
+      <div class="lg:w-2/3 md:w-1/2 min-h-screen md:min-h-full bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
         <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320.39210876336256!2d10.224536431952265!3d45.527783728327634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781760e995540f7%3A0x71296509d6f55da0!2sVia%20Raffaele%20da%20Brescia%2C%2025%2C%2025124%20Brescia%20BS!5e0!3m2!1sit!2sit!4v1614285489545!5m2!1sit!2sit" style="filter: grayscale(1) contrast(1) opacity(0.7);"></iframe>
       </div>
       <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
