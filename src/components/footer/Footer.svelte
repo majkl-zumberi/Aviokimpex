@@ -23,8 +23,9 @@
 </script>
 
 <footer class=" flex justify-center">
-  <div class="w-full max-w-screen-lg p-4 md:p-8">
+  <div class="w-full max-w-full p-4 md:p-8">
     <div class="flex flex-wrap w-full justify-between mb-4">
+
       <section class="w-full sm:w-4/12 mb-8 sm:mb-0">
         <img
           class="hidden lg:block h-14 w-auto"
@@ -37,8 +38,15 @@
               "Kimpex di Pietro Marinoni - Sede Operativa: via Raffaele Da Brescia 25 - 25124 Brescia",
           })}
         </p>
+        <br>
+        <p>Via Monte Pasubio, 114/b 25014, Castenedolo (BS), Italia</p>
+        <p>P.iva 02266020987</p>
+        <p>C.F. MRNPTR54S18B157R</p>
+        <p>Pec: pec@pec.aviokimpex.com</p>
+
       </section>
-      <div class="flex w-full sm:w-8/12 sm:justify-end">
+      
+      <div class="flex w-full sm:w-8/12 sm:justify-center">
         <section>
           <h1 class="text-gray-800 text-xl mb-2">Link</h1>
           <ul>
@@ -51,7 +59,8 @@
             {/each}
           </ul>
         </section>
-        <section class="ml-16 md:ml-24">
+
+        <section class="ml-16 md:ml-10">
           <h1 class="text-gray-800 text-xl mb-2">
             {$_("footer.contacts.keepInTouch", {
               default: "Restiamo in contatto!",
@@ -60,6 +69,11 @@
           <div class="-ml-2" />
           <h1 class="text-gray-800 text-xl mt-4">Email</h1>
           <div class="flex flex-col">
+            <a
+              class="text-gray-700 ul-hover-effect"
+              href="mailto:amministrazione@aviokimpex.com"
+              >amministrazione@aviokimpex.com
+            </a>
             <a
               class="text-gray-700 ul-hover-effect"
               href="mailto:pietromarinoni@aviokimpex.com"
@@ -72,6 +86,23 @@
             </a>
           </div>
         </section>
+
+        <section class="w-full sm:w-5/12 ml-20">
+          <img
+            class="hidden lg:block h-14 w-auto"
+            src="/images/AvioKimpexsrl.png"
+            alt="aviokimpex logo"
+          />
+          <p class="text-gray-800">
+            Aviokimpex
+          </p>
+          <br>
+          <p>Via Monte Pasubio, 114/b 25014, Castenedolo (BS), Italia</p>
+          <p>P.iva 04158520983</p>
+          <p>C.F. 04158520983 </p>
+          <p>Pec: aviokimpexsrl@pec.it</p>
+        </section>
+
       </div>
     </div>
     <div class="text-center">
