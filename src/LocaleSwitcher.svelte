@@ -1,5 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import it from './components/icons/it.svelte';
+  import eu from './components/icons/eu.svelte';
 
   export let value = "it";
   const dispatch = createEventDispatcher();
@@ -21,5 +23,8 @@
 <style>
   button {
     z-index: 999 !important;
+    
   }
 </style>
+
+
