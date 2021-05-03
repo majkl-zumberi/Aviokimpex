@@ -11,7 +11,7 @@
   >
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       <img
-        class="object-cover object-center rounded-full ml-10"
+        class="object-cover object-center rounded-full"
         alt="hero"
         src="/images/Profile.jpg"
       />

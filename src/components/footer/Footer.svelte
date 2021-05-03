@@ -40,7 +40,7 @@
 
       </section>
       
-      <div class="flex w-full sm:w-8/12 sm:justify-center">
+      <div class="flex w-full sm:w-8/12 sm:justify-center sm:mb-0">
         <section>
           <h1 class="text-gray-800 text-xl mb-2 mt-2">Link</h1>
           <ul class="mt-11">
@@ -81,7 +81,7 @@
           </div>
         </section>
 
-        <section class="w-full sm:w-5/12 ml-24">
+        <section class="w-full sm:w-5/12 ml-24 sm:mb-0">
           <img
             class="hidden lg:block h-14 w-auto"
             src="/images/AvioKimpexsrl.png"
