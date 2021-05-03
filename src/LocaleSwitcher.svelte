@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import it from './components/icons/it.svelte';
-  import eu from './components/icons/eu.svelte';
+  import It from "./components/icons/It.svelte";
+  import Eu from "./components/icons/Eu.svelte";
 
   export let value = "it";
   const dispatch = createEventDispatcher();
@@ -14,16 +14,17 @@
 <button
   on:click={() => switchLocale("it")}
   class="z-50 block bg-gray-100 px-4 py-2 text-sm text-gray-700 hover:bg-gray-300"
-  role="menuitem">Italiano</button>
+  role="menuitem"><It/></button>
 <button
   on:click={() => switchLocale("en")}
   class="z-50 block bg-gray-100 px-4 py-2 text-sm text-gray-700 hover:bg-gray-300"
-  role="menuitem">English</button>
+  role="menuitem"><Eu/></button>
 
 <style>
   button {
     z-index: 999 !important;
-    
+    width: 25px;
+    height: 25px;
   }
 </style>
 
