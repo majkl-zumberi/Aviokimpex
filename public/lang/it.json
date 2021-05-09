@@ -23,6 +23,20 @@
         "who":"Chi siamo?",
         "marinoni":"Pietro Marinoni professionista da quasi quarantanni nel settore aeronautico, civile e militare per la commercializzazione parti di ricambio, nel 2000 fonda la Kimpex, un’azienda in grado di servire a 360° ricambistica e assistenza minuteria, attrezzature,prodotti chimici e lubrificanti."
     },
+    "about_feature":{
+        "consulting":{
+            "title": "Consulenze Professionali",
+            "description": "dedichiamo grande attenzione all’ascolto per acquisire tutte le informazioni necessarie a capire le esigenze dei clienti"
+        },
+        "efficiency":{
+            "title": "Efficienza e Rapidità",
+            "description": "assicuriamo un servizio rapido, efficiente e intuitivo dall'invio sino alla consegna, con tecnologie sofisticate per il monitoraggio dell’ordine."
+        },
+        "assortment":{
+            "title":"Vasto Assortimento",
+            "description":"Grazie al nostro ampio ventaglio di servizi diversificati e su misura, possiamo soddisfare ogni esigenza, dai piccoli pezzi di ricambio fino ad articoli completi e materiali"
+        }
+    },
     "order":{
         "request":"Richiedi quotazione",
         "info":"Vuoi ricevere maggiori informazioni o una quotazione personalizzata su questo articolo? Chiamaci al numero",

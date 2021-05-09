@@ -23,6 +23,20 @@
     "who": "Who we are?",
     "marinoni": "Pietro Marinoni, a professional for almost forty years in the aeronautical, civil and military sectors for the marketing of spare parts, in 2000 he founded Kimpex, a company capable of providing 360 ° spare parts and assistance for small parts, equipment, chemicals and lubricants."
   },
+  "about_feature":{
+    "consulting":{
+        "title": "Professional Consulting",
+        "description": "we pay great attention to listening to acquire all the information necessary to understand customer needs"
+    },
+    "efficiency":{
+        "title": "Efficiency and Speed",
+        "description": "we ensure a fast, efficient and intuitive service from dispatch to delivery, with sophisticated technologies for order tracking."
+    },
+    "assortment":{
+        "title":"Wide assortment",
+        "description":"Thanks to our wide range of diversified and tailor-made services, we can satisfy every need, from small spare parts to complete items and materials"
+    }
+},
   "order": {
     "request": "Request a quote",
     "info": "Do you want to receive more information or a personalized quotation on this article? Call us at the number",
