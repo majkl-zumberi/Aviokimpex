@@ -1,3 +1,6 @@
+<script>
+  import { _ } from "svelte-i18n";
+</script>
 <section class="text-gray-600 body-font rounded mb-2">
     <div class="px-5 py-24 mx-auto">
       <div
@@ -21,11 +24,14 @@
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
-            know How
+            {$_("about_feature.consulting.title", {
+              default: "Consulenze Professionali",
+            })}
           </h2>
           <p class="leading-relaxed text-base">
-            example text, example text, example text, example text, example text,
-            example text, example text.
+            {$_("about_feature.consulting.description", {
+              default: "dedichiamo grande attenzione all’ascolto per acquisire tutte le informazioni necessarie a capire le esigenze dei clienti",
+            })}
           </p>
         </div>
       </div>
@@ -35,11 +41,14 @@
       >
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
-            Rapidità
+            {$_("about_feature.efficiency.title", {
+              default: "Efficienza e Rapidità",
+            })}
           </h2>
           <p class="leading-relaxed text-base">
-            example text, example text, example text, example text, example text,
-            example text, example text.
+            {$_("about_feature.efficiency.description", {
+              default: "assicuriamo un servizio rapido, efficiente e intuitivo dall'invio sino alla consegna, con tecnologie sofisticate per il monitoraggio dell’ordine.",
+            })}
           </p>
         </div>
   
@@ -81,11 +90,14 @@
   
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
-            Vasto Assortimento
+            {$_("about_feature.assortment.title", {
+              default: "Vasto Assortimento",
+            })}
           </h2>
           <p class="leading-relaxed text-base">
-            example text, example text, example text, example text, example text,
-            example text, example text.
+            {$_("about_feature.assortment.description", {
+              default: "Grazie al nostro ampio ventaglio di servizi diversificati e su misura, possiamo soddisfare ogni esigenza, dai piccoli pezzi di ricambio fino ad articoli completi e materiali",
+            })}
           </p>
         </div>
       </div>
