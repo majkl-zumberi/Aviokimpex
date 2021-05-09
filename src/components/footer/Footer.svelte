@@ -24,11 +24,11 @@
 
 <footer class=" flex justify-center">
   <div class="w-full max-w-full p-4 md:p-8">
-    <div class="flex flex-wrap w-full justify-between mb-4">
+    <div class="flex flex-wrap flex-wrap md:flex-nowrap w-full justify-between mb-4">
 
       <section class="w-full sm:w-4/12 mb-8 sm:mb-0">
         <img
-          class="hidden lg:block h-14 w-auto"
+          class="block lg:block h-14 w-auto"
           src="/images/Logo-Kimpex.png"
           alt="kimpex logo"
         />
@@ -40,8 +40,8 @@
 
       </section>
       
-      <div class="flex w-full sm:w-8/12 sm:justify-center sm:mb-0">
-        <section>
+      <div class="flex w-full flex-wrap md:flex-nowrap sm:justify-center sm:mb-0">
+        <section class="w-1/2">
           <h1 class="text-gray-800 text-xl mb-2 mt-2">Link</h1>
           <ul class="mt-11">
             {#each routes as route}
@@ -54,7 +54,7 @@
           </ul>
         </section>
 
-        <section class="ml-33 md:ml-10 mt-2">
+        <section class=" w-1/2 ml-33 md:ml-10 mt-2">
           <h1 class="text-gray-800 text-xl mb-2">
             {$_("footer.contacts.keepInTouch", {
               default: "Restiamo in contatto!",
@@ -81,9 +81,9 @@
           </div>
         </section>
 
-        <section class="w-full sm:w-5/12 ml-24 sm:mb-0">
+        <section class="w-full md:ml-24">
           <img
-            class="hidden lg:block h-14 w-auto"
+            class="pt-2 block lg:block h-14 w-auto"
             src="/images/AvioKimpexsrl.png"
             alt="aviokimpex logo"
           />
