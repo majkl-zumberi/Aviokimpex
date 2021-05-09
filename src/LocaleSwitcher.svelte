@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import It from "./components/icons/It.svelte";
-  import Eu from "./components/icons/Eu.svelte";
+  import It from "./components/icons/it.svelte";
+  import Eu from "./components/icons/eu.svelte"; 
 
   export let value = "it";
   const dispatch = createEventDispatcher();
