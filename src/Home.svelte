@@ -5,5 +5,5 @@
 </script>
 
 <Slideshow />
-<AboutFeature />
 <HomeBanner />
+<AboutFeature />
