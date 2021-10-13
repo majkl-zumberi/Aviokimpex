@@ -7,12 +7,14 @@
         "quotation":"Request a quote"
     }
 },
+
   "footer": {
     "contacts": {
       "headQuarter": "Kimpex di Pietro Marinoni - Operational Headquarters: via Raffaele Da Brescia 25 - 25124 Brescia",
       "keepInTouch": "Contact us!"
     }
   },
+  
   "infoBanner": {
     "search": {
       "insert": "insert",
