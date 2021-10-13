@@ -56,12 +56,13 @@
     "ListCategories":{
         "allCategories":"Tutte le categorie"
     },
-    "links":{
-        "home":"home",
-        "aboutUs":"chi siamo",
-        "brands":"le nostre marche",
-        "contactUs":"contattaci"
-    },
+    "links": {
+        "home": "home",
+        "aboutUs": "chi siamo",
+        "brands": "le nostre marche",
+        "contactUs": "contattaci",
+        "gallery": "galleria"
+      },
     "contacts":{
         "thanks": "grazie per averci contattato",
         "name":"Nome",
@@ -70,5 +71,12 @@
         "send":"Invia",
         "soon":"Ti contatteremo nel minor tempo possibile."
 
+    },
+    "brands":{
+        "list": "Le nostre marche"
+
+    },
+    "photos":{
+        "title": "Galleria fotografica"
     }
 } 

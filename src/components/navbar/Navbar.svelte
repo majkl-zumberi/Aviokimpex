@@ -24,6 +24,11 @@
       path: "/contacts",
       label: "contactUs",
     },
+    {
+      path: "/gallery",
+      label: "gallery",
+    },
+
   ];
   function toggleMenu() {
     menuOpen = !menuOpen;

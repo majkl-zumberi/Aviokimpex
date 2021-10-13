@@ -60,7 +60,8 @@
     "home": "home",
     "aboutUs": "about us",
     "brands": "our brands",
-    "contactUs": "contact us"
+    "contactUs": "contact us",
+    "gallery": "gallery"
   },
   "contacts":{
     "thanks": "Thanks for contacting us",
@@ -69,5 +70,12 @@
     "message":"Message",
     "send":"Send",
     "soon":"We'll contact you as soon as possible."
-}
+  },
+  "brands":{
+    "list": "Our brands"
+  },
+  "photos":{
+    "title": "Photo gallery"
+  }
+  
 }

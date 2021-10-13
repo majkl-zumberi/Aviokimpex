@@ -19,6 +19,10 @@
       path: "/contacts",
       label: "contactUs",
     },
+    {
+      path: "/gallery",
+      label: "gallery",
+    },
   ];
 </script>
 

@@ -16,7 +16,9 @@
   import InfoBanner from "./InfoBanner.svelte";
   import Navbar from "./components/navbar/Navbar.svelte";
   import { setupI18n } from "./services/i18n/i18n";
-  import { SvelteToast } from '@zerodevx/svelte-toast'
+  import { SvelteToast } from '@zerodevx/svelte-toast';
+  import Gallery from "./Gallery.svelte";
+  
 
   locale.set("it");
   setupI18n({ withLocale: "it" });
@@ -46,6 +48,7 @@
         "/contacts": Contacts,
         "/articles/category/:id_category/:id_parent_category?": ArticlesList,
         "/article/:id": ArticleDetail,
+        "/gallery": Gallery,
       }}
     />
   </FirebaseApp>
