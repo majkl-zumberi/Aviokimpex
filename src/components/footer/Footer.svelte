@@ -37,7 +37,7 @@
           alt="kimpex logo"
         />
         <br>
-        <p>Via Monte Pasubio, 114/b 25014, Castenedolo (BS), Italia</p>
+        <p>Via Monte Pasubio, 114/b 25014, <br> Castenedolo (BS), Italia</p>
         <p>P.iva 02266020987</p>
         <p>C.F. MRNPTR54S18B157R</p>
         <p>Pec: pec@pec.aviokimpex.com</p>
